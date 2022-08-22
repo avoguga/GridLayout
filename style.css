@@ -1,14 +1,19 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 #layout{
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
+  grid-template-columns: 250px auto;
+  grid-template-rows: 100px auto 100px;
   
   grid-template-areas:
   'side header'
   'side mainContent'
   'side footer';
 }
-
 
 #header{
   grid-area: header;
@@ -19,11 +24,15 @@
   grid-area: side;
   background-color: blue;
 }
+
 #mainContent{
+  height: 70vh;
   grid-area: mainContent;
   background-color: red;
 }
+
 #footer{
   grid-area: footer;
   background-color: #000;
+  color: white;
 }
