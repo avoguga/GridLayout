@@ -1,0 +1,11 @@
+#layout{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 60px;
+  
+  grid-template-areas:
+  'MH'
+  'CT';
+
+  height: 100vh;
+}
