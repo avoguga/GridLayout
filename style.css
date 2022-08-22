@@ -1,11 +1,29 @@
 #layout{
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 60px;
+  grid-template-rows: auto;
   
   grid-template-areas:
-  'MH'
-  'CT';
+  'side header'
+  'side mainContent'
+  'side footer';
+}
 
-  height: 100vh;
+
+#header{
+  grid-area: header;
+  background-color: green;
+}
+
+#side{
+  grid-area: side;
+  background-color: blue;
+}
+#mainContent{
+  grid-area: mainContent;
+  background-color: red;
+}
+#footer{
+  grid-area: footer;
+  background-color: #000;
 }
